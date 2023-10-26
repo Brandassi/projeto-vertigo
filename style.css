@@ -107,6 +107,7 @@ font-size: 1.5626rem;
 .login button:hover{
     background: var(--light-purple);
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .login > p{
@@ -123,6 +124,7 @@ font-size: 1.5626rem;
 @media(min-width: 1000px) {
     body{
         display: flex;
+        height: 100vh;
     }
     header{
         background: none;
@@ -148,6 +150,11 @@ font-size: 1.5626rem;
     .bg-desktop{
         display: block;
         width: 100%;
+    }
+    .bg-desktop img {
+        display: block;
+        width: 100%;
+        height: 100%;
     }
     .descricao h1{
         font-size: 2.25rem;
