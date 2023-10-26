@@ -11,12 +11,13 @@ font-family: 'Titillium Web', sans-serif;
     --gray-400: #94a2b8;
     --gray-200: #e2e8f0;
     --purple: #7c3aed;
+    --light-purple: #9F67FF;
     --white: #fff;
     
 }
 
 header{
-    background-image: url(./imagens/bg-mobile.png);
+    background-image: url(./imagens/bg-mobile2.png);
     background-size: cover;
     height: 8.375rem;
     display: flex;
@@ -103,6 +104,11 @@ font-size: 1.5626rem;
     color: var(--white);
 }
 
+.login button:hover{
+    background: var(--light-purple);
+    transition: 0.3s;
+}
+
 .login > p{
     color: var(--gray-600);
 }
@@ -110,4 +116,44 @@ font-size: 1.5626rem;
 .login> p a{
     font-weight: 700;
     font-size: 1rem;
+}
+.bg-desktop{
+    display: none;
+}
+@media(min-width: 1000px) {
+    body{
+        display: flex;
+    }
+    header{
+        background: none;
+        justify-content: flex-start;
+        margin: 2.5rem  7rem;
+        height: fit-content;
+        
+    }
+    header img{
+        width: 10rem;
+    }
+    main{
+    margin-inline: 7rem;
+    max-width: 24rem;
+    padding: 0;
+    }
+    .conteudo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bg-desktop{
+        display: block;
+        width: 100%;
+    }
+    .descricao h1{
+        font-size: 2.25rem;
+    }
+    .descricao p{
+        font-size: 1rem;
+    }
+    
 }
